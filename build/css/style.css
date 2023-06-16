@@ -692,6 +692,8 @@ button,
   border-radius: 6px;
   background-color: #d24848;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
 /* @mixin hover-focus {

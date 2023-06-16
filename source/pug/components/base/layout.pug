@@ -10,13 +10,18 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    meta(name="description" content="404JazzPayLendiplom")
+    meta(name="description" content="Запрашиваемая страница не найдена")
     //- генерируйте favicon тут - https://realfavicongenerator.net/
     //- в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"
-
-    //- используйте только для шрифта находящегося на первом экране
-    //- link(rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous")
-    link(rel="stylesheet" href="css/style.min.css")
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  //- используйте только для шрифта находящегося на первом экране
+  //- link(rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous")
+  link(rel="stylesheet" href="css/style.min.css")
 
   body
     +sprite()

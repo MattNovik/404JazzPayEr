@@ -1,18 +1,22 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "404JazzPayLepdiplom" //- на страницах кроме главной используйте О нас — ProjectName
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
   - const hasFooter = true
   - const footerMods = ""
-  - const currentUrl = "index.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+  - const currentUrl = "404.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
 block main
   main
-    //- на странице запрещен "голый" код
-    //- все блоки вставляются из папки pug/components/blocks
-    +intro()
+    .page-container
+      .page-container__wrapper
+        h1.page-container__title Запрашиваемая страница не найдена
+        p.page-container__text Иногда и такое случается
+        a(href="/").page-container__link
+          span Вернуться назад
+          +icon('icon-arrow', 8, 13)
 
-block modals
+
